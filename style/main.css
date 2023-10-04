@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+}
+
+h1 {
+  position: absolute;
+  display: none;
+}
+
+main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20em;
+  min-height: 312.8px;
+  background-color: hsl(217, 19%, 24%);
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  padding: 40px 30px 60px;
+  border-radius: 15px;
+  box-shadow: 10px 20px 40px 10px hsl(218, 23%, 16%), 10px 15px 40px -5px #1c2028;
+}
+main .advice_id {
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+main .advice_id span {
+  font-size: inherit;
+}
+main .advice_content p {
+  position: relative;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  transition: 0.2s;
+}
+main .advice_content p::before, main .advice_content p::after {
+  position: absolute;
+  color: hsl(193, 38%, 86%);
+}
+main .advice_content p::before {
+  content: open-quote;
+  transform: translateX(-15px);
+}
+main .advice_content p::after {
+  content: close-quote;
+}
+main button {
+  position: absolute;
+  background-color: hsl(150, 100%, 66%);
+  padding: 20px;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+main button:hover {
+  box-shadow: 0 0 30px 2px hsl(150, 100%, 66%);
+}
+main button:focus {
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 95%;
+  }
+}/*# sourceMappingURL=main.css.map */
